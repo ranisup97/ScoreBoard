@@ -16,8 +16,13 @@ const Panel = styled.div`
 `;
 
 function PanelScoreboard(props) {
-  const handleSave = () => {
-    //   props.navigation.navigate('Output');
+   
+  const handleSave = (e) => {
+
+    // props.setPoint(
+    //     props.point(e.target.value)
+
+    // )
   };
 
   const { teams } = props;
@@ -30,7 +35,7 @@ function PanelScoreboard(props) {
         })}
       </Panel>
       <div>
-        <button type="submit" className="btn btn-secondary">
+        <button type="submit" className="btn btn-secondary"  onClick={handleSave}>
           Save
         </button>
       </div>

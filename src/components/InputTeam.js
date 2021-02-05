@@ -17,7 +17,7 @@ function InputTeam(props) {
   const onSubmit = () => {
     props.setTeams(
       props.teams.concat(teamA.current.value, teamB.current.value)
-    );
+    )
     // if(teamA.current.value == 0 || teamB.current.value == 0 ){
     //   props.setReady(false)
     // }else{

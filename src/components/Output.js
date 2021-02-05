@@ -1,16 +1,16 @@
 import React from "react";
 
 function Output(props) {
-  const { point } = props;
+  const point = props.point;
   console.log(props);
   return (
     <table className="table">
       <thead>
         <tr>
           <th scope="col">No</th>
-          <th scope="col">Klub</th>
-          <th scope="col">Ma</th>
-          <th scope="col">Me</th>
+          <th scope="col">Nama Klub</th>
+          <th scope="col">Main</th>
+          <th scope="col">Menang</th>
           <th scope="col">S</th>
           <th scope="col">K</th>
           <th scope="col">6M</th>
@@ -21,7 +21,7 @@ function Output(props) {
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>Nama Klub</td>
+          <td>-</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -32,7 +32,7 @@ function Output(props) {
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Nama Klub</td>
+          <td>-</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -43,7 +43,7 @@ function Output(props) {
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td>Nama Klub</td>
+          <td>-</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
