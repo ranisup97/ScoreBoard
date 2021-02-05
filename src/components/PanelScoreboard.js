@@ -1,0 +1,41 @@
+import React from "react";
+import styled from "styled-components";
+import Score from "./Score";
+
+const Container = styled.div`
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+`;
+
+const Panel = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
+
+function PanelScoreboard(props) {
+  const handleSave = () => {
+    //   props.navigation.navigate('Output');
+  };
+
+  const { teams } = props;
+  console.log(props);
+  return (
+    <Container>
+      <Panel>
+        {teams.map((team) => {
+          return <Score team={team} />;
+        })}
+      </Panel>
+      <div>
+        <button type="submit" className="btn btn-secondary">
+          Save
+        </button>
+      </div>
+    </Container>
+  );
+}
+
+export default PanelScoreboard;
